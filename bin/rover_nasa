@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative '../lib/rover_nasa'
+require_relative '../lib/rover_nasa/reader'
 
 puts RoverNasa::Reader.read('input.txt')
