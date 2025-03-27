@@ -34,6 +34,16 @@ class Rover
       end 
   end 
 
+  def ejecutar_comandos(comandos)
+    comandos.chars.each do |comando|
+      case comando
+      when 'L' then girar_a_la_izquierda
+      when 'R' then girar_a_la_derecha
+      when 'M' then mover_rovers
+      end
+    end
+  end
+
   def to_s
     "#{x}, #{y}, #{direccion}"
   end
