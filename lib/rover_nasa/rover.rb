@@ -38,10 +38,3 @@ class Rover
     "#{x}, #{y}, #{direccion}"
   end
 end 
-
-rover = Rover.new(0, 0, 'N')
-rover.mover_rovers
-puts rover
-rover.girar_a_la_derecha
-rover.mover_rovers
-puts rover
