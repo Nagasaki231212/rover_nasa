@@ -7,4 +7,13 @@ RSpec.describe Rover do
     rover.ejecutar_comandos("LMLMLMLMM") 
     expect(rover.to_s).to eq("1, 3, N") 
   end
+
+  it "Comprobando que el Rover inicia bien 🛰️" do
+    rover = Rover.new(3, 3, 'E')  
+
+    expect(rover.x).to eq(3)
+    expect(rover.y).to eq(3)
+    expect(rover.direccion).to eq('E')
+  end
 end
+

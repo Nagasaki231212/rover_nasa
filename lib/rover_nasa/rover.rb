@@ -34,7 +34,7 @@ class Rover
       end 
   end 
 
-  def ejecutar_comandos(comandos)
+  def ejecutar_comandos(comandos) 
     comandos.chars.each do |comando|
       case comando
       when 'L' then girar_a_la_izquierda
